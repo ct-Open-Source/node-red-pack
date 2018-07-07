@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nodered:
+    image: nodered/node-red-docker:slim
+    ports:
+     - "1880:1880"
+    volumes:
+     - ./data/nodered:/data
+  mqtt:
+   image: "eclipse-mosquitto"
+   ports:
+    - "1883:1883"
+    - "9001:9001"
+   volumes:
+    - ./data/mqtt/config:/mosquitto/config
+    - ./data/mqtt/data:/mosquitto/data
+    - ./data/mqtt/log:/mosquitto/log
