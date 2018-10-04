@@ -15,3 +15,10 @@ services:
     - ./data/mqtt/config:/mosquitto/config
     - ./data/mqtt/data:/mosquitto/data
     - ./data/mqtt/log:/mosquitto/log
+  zigbee:
+   image: koenkk/zigbee2mqtt
+   volumes:
+    - ./data/zigbee:/app/data
+   devices:
+    - "/dev/ttyACM0:/dev/ttyACM0"
+   

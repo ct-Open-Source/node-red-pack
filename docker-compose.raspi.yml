@@ -4,3 +4,6 @@ services:
     image: nodered/node-red-docker:rpi
   mqtt:
    image: merlinschumacher/docker-rpi-mosquitto
+  zigbee:
+   image: koenkk/zigbee2mqtt:arm32v6
+
