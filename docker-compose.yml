@@ -6,6 +6,8 @@ services:
      - "1880:1880"
     volumes:
      - ./data/nodered:/data
+    depends_on:
+     - mqtt
   mqtt:
    image: "eclipse-mosquitto"
    ports:
