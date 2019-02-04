@@ -1,3 +1,6 @@
+# !!THIS REPOSITORY IS DEPRECATED!! 
+# USE https://github.com/ct-Open-Source/ct-Smart-Home
+
 # node-red-pack
 Docker-environment for Node-Red with MQTT
 
